@@ -9,7 +9,6 @@ class House():
         self.__tax_info = tax_info
         
         
-        
     # getters
     def get_area_code(self):
         return self.area_code
@@ -48,7 +47,7 @@ our_house = House(435, 3000, 3, 5, 0, 1234, 7)
 
 our_house.set_sq_ft(3500)
 
-our_house.__garage_code = 2468
+# our_house.__garage_code = 2468
 
 print(our_house.__garage_code)
 

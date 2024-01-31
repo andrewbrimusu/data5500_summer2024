@@ -19,8 +19,6 @@ def calc_avg_grades(grades):
 print(calc_avg_grades(person["hw_scores"]))
 
 
-        
-
 
 # A class combines data and functions
 class Person():

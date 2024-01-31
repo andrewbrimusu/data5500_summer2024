@@ -11,7 +11,8 @@ class Car:
         return self.original_price * (.90 ** (current_year - self.year))
         
         
-andys_car = Car("Toyota", "Sequoia", 2001, 275000, 45000)
+andys_car = Car("Toyota", "Sequoia", 2001, 2000, 45000)
+
 
 print("andys_car value:", andys_car.current_value(2023))
 
@@ -19,6 +20,19 @@ print("andys_car value:", andys_car.current_value(2023))
 class AntiqueCar(Car):
     def current_value(self, current_year):
         return self.original_price * (1.03 ** (current_year - self.year))
+        
+        
+toms_cougar = AntiqueCar("Mercury", "Cougar", 1970, 80000, 10000)
+
+print("toms_cougar: ", toms_cougar.current_value(2024))
+
+        
+        
+        
+        
+        
+        
+        
         
         
 gregs_car = AntiqueCar("Cadillac", "DeVille", 1976, 100000, 18000)
@@ -30,7 +44,7 @@ print("gregs_car value: ", gregs_car.current_value(2023))
 johnnys_car = Car("Ford", "F150", 2015, 55000, 45000)
 jennys_car = Car("Toyota", "Rav1", 2006, 125000, 20000)
 
-car_lot = [andys_car, johnnys_car, jennys_car, gregs_car]
+car_lot = [andys_car, johnnys_car, jennys_car, gregs_car, toms_cougar]
 
 total_value = 0.0
 

@@ -39,4 +39,12 @@ class DeckOfCards():
         return self.deck[self.play_idx - 1]
         
         
+card_deck = DeckOfCards()
 
+card_deck.print_deck()
+
+card_deck.shuffle_deck()
+
+card_deck.print_deck()
+
+print(card_deck.get_card().val + card_deck.get_card().val)
