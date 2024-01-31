@@ -6,7 +6,7 @@ If your csv needs to append newest prices at the end of the csv file, a simple w
     
 '''
 
-
+import os
 import requests
 import json
 
@@ -18,8 +18,8 @@ url = 'http://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol=AAPL&o
 # variables to query alphavantage
 ticker = 'AAPL'
 key_timeseries = "Time Series (Daily)"
-key_close = "5. adjusted close"
-first_date = "2022-05-30"
+key_close = "4. close"
+first_date = "2023-01-31"
 
 #generate url
 url = 'http://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol='+ticker+'&outputsize=full&apikey=NG9C9EPVYBMQT0C8'
